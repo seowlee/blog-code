@@ -1,10 +1,6 @@
-const names = require("./04-names");
-const sayHi = require("./05-utils");
-const data = require("./06-alternative-flavor");
-require("./07-mind-grenade");
+const _ = require("lodash");
 
-// console.log(names);
-// console.log(data);
-// sayHi("susan");
-// sayHi(names.john);
-// sayHi(names.peter);
+const items = [1, [2, [3, [4]]]];
+const newItems = _.flattenDeep(items);
+console.log(newItems);
+console.log("hello world");
